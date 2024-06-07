@@ -7,6 +7,8 @@
 # URL: <https://www.nltk.org/>
 # For license information, see LICENSE.TXT
 
+
+
 # Work around mbcs bug in distutils.
 # https://bugs.python.org/issue10945
 import codecs
@@ -21,7 +23,7 @@ except LookupError:
 import os
 
 # Use the VERSION file to get NLTK version
-version_file = os.path.join(os.path.dirname(__file__), "nltk", "VERSION")
+version_file = os.path.join(os.path.dirname(r"/Users/neilstein/Applications/Python_3.12"), "nltk", "VERSION")
 with open(version_file) as fh:
     nltk_version = fh.read().strip()
 
